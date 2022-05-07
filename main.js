@@ -9,3 +9,15 @@ menuBtn.addEventListener("click", () => {
 exitBtn.addEventListener('click', () => {
     menu.style.transform = 'translateX(100%)';
 });
+
+const scrollReveal = ScrollReveal({
+    origin: "top",
+    distance: "32px",
+    duration: 700,
+    reset: true
+});
+
+scrollReveal.reveal(
+    `main, .gallery`
+    , { interval: 100 }
+);
